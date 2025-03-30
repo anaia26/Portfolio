@@ -1,0 +1,294 @@
+/*Margen y relleno para que se ajuste al tamaño de la ventana.*/
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas.*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Tipografía Dancing Script cursiva para los títulos h1, h2 y h3.*/
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+/*Poner sombra al texto de los títulos h2 y h3 de color azul (primary de Bootstrap).*/
+h2, h3 {
+    text-shadow: 0.125rem 0.125rem 0.25rem #007bff; /*2px 2px 4px*/
+}
+
+/*Poner color de fondo, borde (tamaño, estilo y color), eliminar el margen abajo y poner opacidad para la línea tenga ese color sin 
+transparencia.*/
+.lineaAzul {
+    background-color: #007bff;
+    border: solid 0.3125rem #007bff;/*5px*/
+    margin-bottom: 0rem;
+    opacity: 1;
+}
+
+/*Poner tamaño (anchura y altura) al elemento que tiene el id #imagenAnaPresentacion.*/
+#imagenAnaPresentacion {
+    width: 21.875rem;/*350px*/
+    height: 21.875rem;/*350px*/
+}
+
+/*Poner la alineación del texto justificada a los elementos que tienen la clase .text-justify.*/
+.text-justify {
+    text-align: justify;
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionSobreMi.*/
+#seccionSobreMi {
+    background-color: #ffffff
+}
+
+/*Eliminar el subrayado de los enlaces.*/
+a {
+    text-decoration: none;
+}
+
+/*Cambiar el color del icono del menú hamburguesa (cuando es responsive).*/
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath d='M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
+}
+
+/*Eliminar el borde predeterminado del botón del menú hamburguesa.*/
+.navbar-toggler {
+    border: none;
+}
+
+/*Poner tamaño (anchura y altura) a los elementos que tienen la clase .tamanhoIconosLenguajes.*/
+.tamanhoIconosLenguajes {
+    width: 9.375rem;/*150px*/
+    height: 9.375rem;/*150px*/
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionHabilidades.*/
+#seccionHabilidades {
+    background-color: #c8edff;
+}
+
+/*Poner transición a los elementos que tienen la clase .navbar-brand.*/
+.navbar-brand {
+    transition: all 0.3s ease;
+}
+
+/*Poner color de letra y subrayado a los elementos que tienen la clase .navbar-brand cuando se pasa el ratón por encima.*/
+.navbar-brand:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionProyectos.*/
+#seccionProyectos { 
+    background-color: #ffffff;
+}
+
+/*Poner tamaño (anchura y altura) a los elementos que tienen la clase .tamanhoCardProyectos.*/
+.tamanhoCardProyectos {
+    width: 25rem; /*400px*/
+    height: auto;
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionExperiencia.*/
+#seccionExperiencia {
+    background-color: #c8edff;
+}
+
+/*Poner color de letra y eliminar subrayado a los elementos que tienen la clase .enlaceAzul.*/
+.enlaceAzul {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/*Poner subrayado a los elementos que tienen la clase .enlaceAzul cuando se pasa el ratón por encima.*/
+.enlaceAzul:hover {
+    text-decoration: underline;
+}
+
+/*Cambiar la tipografía y el tamaño de la letra de los elementos que tienen la clase .tituloCardExperiencia.*/
+.tituloCardExperiencia {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.75rem;/*28px*/
+}
+
+/*Poner tamaño (anchura máxima) a los elementos que tienen la clase .tamanhoCardExperiencias.*/
+.tamanhoCardExperiencias {
+    max-width: 46.25rem;/*740px*/
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionContacto.*/
+#seccionContacto {
+    background-color: #ffffff;
+}
+
+/*Poner tamaño (anchura y altura) al elemento que tiene el id #imagenAnaContacto.*/
+#imagenAnaContacto {
+    width: 15.625rem;/*250px*/
+    height: 15.625rem;/*250px*/
+}
+
+/*Poner tamaño (anchura) a los elementos que tienen la clase .anchoBotonesFormulario.*/
+.anchoBotonesFormulario {
+    width: 7.9375rem;/*127px*/
+}
+
+/*Poner que no se pueda redimensionar para evitar que se pueda modificar el tamaño del textarea del formulario a los elementos que tienen 
+la clase .no-resize.*/
+.no-resize {
+    resize: none;
+}
+
+/*Poner color de fondo, color de la letra y borde (tamaño, estilo y color) a los elementos que tienen la clase .fondoInputFormulario.*/
+.fondoInputFormulario {
+    background-color: #c8edff;
+    color: #000000;
+    border: 0.0625rem solid #000000;/*1px*/
+}
+
+/*Poner color de letra al texto del marcador de posición (placeholder) de los campos de entrada (inputs) del formulario.*/
+.customPlaceholder::placeholder {
+    color: #000000;
+}
+
+/*Poner color de fondo al footer.*/
+footer {
+    background-color: #ffffff;
+}
+
+/*Agregar antes ">" y ponerle color a los separadores de las migas de pan pero no lo agrega antes del primer elemento de las migas de pan.*/
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " > ";
+    color: #007bff;
+}
+
+/*Poner tamaño (anchura y altura) al elemento que tiene el id #logoAGSPresentacion.*/
+#logoAGSPresentacion {
+    width: 21.875rem; /*350px*/
+    height: 21.875rem; /*350px*/
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionPresentacionBlogAGS.*/
+#seccionPresentacionBlogAGS {
+    background-color: #c8edff;
+}
+
+/*Poner la fuente en negrita a los elementos que tienen la clase .negrita.*/
+.negrita {
+    font-weight: bold;
+}
+
+/*Poner color de fondo, borde (tamaño, estilo y color), y reducir el brillo al 93% a los elementos que tienen la clase .fondoBotonEnviar.*/
+.fondoBotonEnviar {
+    background-color: #2dff9e;
+    filter: brightness(0.93); /* Reduce el brillo al 93% */
+    border: 0.0625rem solid #000000;/*1px*/
+}
+
+/*Cambiar el color de fondo y poner borde a los elementos que tienen la clase .fondoBotonEnviar cuando se pasa el ratón por encima.*/
+.fondoBotonEnviar:hover {
+    background-color: #c0ffe2;
+    border: 0.0625rem solid #000000;/*1px*/
+}
+
+/*Poner color de fondo, borde (tamaño, estilo y color), y reducir el brillo al 93% a los elementos que tienen la clase 
+.fondoBotonBorrarDatos.*/
+.fondoBotonBorrarDatos {
+    background-color: #ff6472;
+    filter: brightness(0.93); /* Reduce el brillo al 93% */
+    border: 0.0625rem solid #000000;/*1px*/
+}
+
+/*Cambiar el color de fondo y poner borde a los elementos que tienen la clase .fondoBotonBorrarDatos cuando se pasa el ratón por encima.*/
+.fondoBotonBorrarDatos:hover {
+    background-color: #ffbcc2;
+    border: 0.0625rem solid #000000;/*1px*/
+}
+
+/*Poner color de fondo al elemento que tiene el id #seccionCarouselVistas.*/
+#seccionCarouselVistas {
+    background-color: #ffffff;
+}
+
+/*Poner tamaño (anchura y altura) a las imágenes que están dentro de un elemento que tiene la clase .carousel-item.*/
+.carousel-item img {
+    width: 50vw;
+    height: 50vh;
+}
+
+/*Posicionar los indicadores del carrusel debajo de las imágenes.*/
+.carousel-indicators {
+    position: absolute;
+    bottom: -3.125rem;/*-50px*/
+}
+
+/*Poner color de fondo a los indicadores inactivos del carrusel.*/
+.carousel-indicators button:not(.active) {
+    background-color: grey;
+}
+
+/*Poner color de fondo a los indicadores activos del carrusel.*/
+.carousel-indicators .active {
+    background-color: #007bff;
+}
+
+/*Poner tamaño (anchura y altura), color de fondo semitransparente, borde redondeado, relleno a los dos controles del carrusel y poner los 
+controles del carrusel en el centro.*/
+.carousel-control-prev, .carousel-control-next {
+    width: 2.5rem;/*40px*/
+    height: 2.5rem;/*40px*/
+    background-color: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    padding: 0.625rem;/*10px*/
+    transform: translateY(-50%);
+}
+
+/*Cambiar el color de los controles del carrusel cuando se pasa el ratón por encima*/
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 123, 255);
+}
+
+/*Poner tamaño de letra a los iconos del carrusel "<,>" y altura de línea para evitar que los iconos se desplacen.*/
+.carousel-control-prev span, .carousel-control-next span {
+    font-size: 1.875rem; /*30px*/
+    line-height: 1;
+}
+
+/*Poner a la izquierda el control anterior del carrusel.*/
+.carousel-control-prev {
+    left: 15%;
+}
+
+/*Poner a la derecha el control siguiente del carrusel.*/
+.carousel-control-next {
+    right: 15%;
+}
+
+
+/*Poner color de fondo al elemento que tiene el id #seccionFuturaImplementacion.*/
+#seccionFuturaImplementacion {
+    background-color: #c8edff;
+}
+
+/*Poner tamaño (altura) al elemento que tiene la clase .tamanhoModal.*/
+.tamanhoModal {
+    height: 34.375rem;/*550px*/
+}
+
+/*Poner color de fondo, borde (tamaño, estilo y color), y reducir el brillo al 93% a los elementos que tienen la clase 
+.fondoBotonesBlogAGS.*/
+.fondoBotonesBlogAGS {
+    background-color: #007BFF;
+    filter: brightness(0.93); /* Reduce el brillo al 93% */
+    border: 0.0625rem solid #000000;/*1px*/
+    color: #ffffff;
+}
+
+/*Cambiar el color de fondo y poner borde a los elementos que tienen la clase .fondoBotonesBlogAGS cuando se pasa el ratón por encima.*/
+.fondoBotonesBlogAGS:hover {
+    background-color: #138EC8;
+    border: 0.0625rem solid #ffffff;/*1px*/
+}
+

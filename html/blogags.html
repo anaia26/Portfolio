@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Ana Iglesias Arias - Blog AGS</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid p-0 bg-white sticky-top">
+        <!-- Menú de navegación Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+            <div class="container mt-2">
+            <!-- Botón para colapsar el menú en pantallas pequeñas -->
+                <button class="navbar-toggler bg-primary text-white" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon custom-toggler"></span>
+                </button>
+            <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <a class="navbar-brand mb-3" href="index.html#seccionSobreMi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand mb-3" href="index.html#seccionHabilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand mb-3" href="index.html#seccionProyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand mb-3" href="index.html#seccionExperiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand mb-3" href="index.html#seccionContacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <a href="../documentacion/curriculumVitaeAIA.pdf" class="btn btn-primary rounded-4 nav-item mt-3 mt-md-0" 
+                    target="_blank" download="curriculumVitaeAIA.pdf">
+                        <i class="bi bi-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <hr class="lineaAzul">
+    </header>
+    <main class="container-fluid">
+        <!-- Objetivos Blog AGS -->
+        <section class="row justify-content-center align-items-center p-3" id="seccionPresentacionBlogAGS">
+            <nav aria-label="breadcrumb row">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="enlaceAzul"><i class="bi bi-house-door-fill"></i></a></li>
+                    <li class="breadcrumb-item"><a href="index.html#seccionProyectos" class="enlaceAzul">Proyectos</a></li>
+                    <li class="breadcrumb-item active text-primary text-decoration-underline" aria-current="page">Blog AGS 
+                    (Asociación Gallega de Speedcubing)</li>
+                </ol>
+            </nav>
+            <h1 class="text-center display-2 text-primary">Blog AGS (Asociación Gallega de Speedcubing)</h1>
+                <div class="col-12 col-lg-8">
+                    <h2 class="display-4 text-center text-md-center text-lg-start mb-3 text-primary">Objetivos de este proyecto</h2>
+                    <p class="text-justify mx-2">El objetivo de este proyecto es dominar los fundamentos de HTML y CSS Básico (sin Flexbox 
+                        ni CSS-Grid), poniendo en práctica conceptos clave como la <span class="negrita">estructura semántica</span> de un 
+                        sitio web y el <span class="negrita">diseño visual</span>. Esto incluye el uso correcto de etiquetas HTML y la 
+                        aplicación de estilos con CSS para lograr una página web funcional y atractiva. El diseño de este proyecto busca 
+                        reflejar la <span class="negrita">identidad visual</span> de la <span class="negrita">Asociación Gallega de 
+                        Speedcubing</span>, incluyendo elementos gráficos y mensajes que transmiten valores como la inclusión, el 
+                        aprendizaje continuo y la pasión por el speedcubing.</p>
+                    <!-- Grupo de botones funcionales -->
+                    <div class="d-flex justify-content-center align-items-center gap-4 my-4 mt-lg-4 m-lg-2">
+                        <a class="btn fondoBotonesBlogAGS" 
+                        href="https://www.figma.com/design/w2t2UfnF2lRrAC3uOMqXf2/DIWP2_IglesiasAna?node-id=0-1&p=f&t=bQR78K9cIeHyCx0M-0" 
+                        target="_blank">Guía de estilos</a>
+                        <a class="btn fondoBotonesBlogAGS" href="https://github.com/anaia26" target="_blank">Proyecto en GitHub</a>
+                    </div>
+                </div>
+                <img src="../img/logo-ags-sinFondo.png" alt="Logo Asociación Gallega de Speedcubing" class="col-12 col-lg-4" 
+                id="logoAGSPresentacion" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo de la Asociación Gallega de 
+                Speedcubing">
+        </section>
+        <!-- Carousel de imágenes -->
+        <section class="row justify-content-center align-items-center p-3" id="seccionCarouselVistas">
+            <h2 class="display-4 text-center text-primary mb-4">Vistas del proyecto</h2>
+            <div id="carouselVistasProyecto" class="carousel slide" data-bs-ride="false">
+                <!-- Indicadores de las imágenes -->
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide-to="5"></button>
+                </div>
+                <!-- Imágenes del carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/blog-agspeedcubing.png" class="d-block m-auto" alt="Blog AGS Eventos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/blog-agspeedcubing-2.png" class="d-block m-auto" alt="Blog AGS Campeonatos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/blog-agspeedcubing-3.png" class="d-block m-auto" alt="Blog AGS Records Gallegos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/blog-agspeedcubing-4.png" class="d-block m-auto" alt="Blog AGS Newsletter">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/blog-agspeedcubing-5.png" class="d-block m-auto" alt="Blog AGS Categorias 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/blog-agspeedcubing-6.png" class="d-block m-auto" alt="Blog AGS Categorias 2">
+                    </div>
+                </div>
+                <!-- Botones de control -->
+                <button class="carousel-control-prev d-flex justify-content-center align-items-center position-absolute top-50" 
+                type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon d-block text-white"></span>
+                </button>
+                <button class="carousel-control-next d-flex justify-content-center align-items-center position-absolute top-50" 
+                type="button" data-bs-target="#carouselVistasProyecto" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!-- Futura implementación -->
+        <section class="row justify-content-center align-items-center p-3 mt-4" id="seccionFuturaImplementacion">
+            <h2 class="display-4 text-center text-primary">Futura implementación</h2>
+            <h3 class="display-5 text-center text-md-start mb-3 text-primary">Proyecto Fin de Ciclo</h3>
+            <div class="container">
+                <div class="row justify-content-center justify-content-md-between">
+                    <p class="fw-light col-12 col-md-6 text-center text-md-start">(CS Desarrollo de Aplicaciones Web)</p>
+                    <!-- Botón modal -->
+                    <button type="button" class="btn btn-primary col-12 col-md-6 w-25 rounded-4" data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal">
+                    Consultar mi formación académica
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade tamanhoModal" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog h-100" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Formación académica:</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Técnico Superior en Desarrollo de Aplicaciones Web:</h5>
+                                    <p class="fw-lighter">sept 2022 - jun 2025, CPR Liceo La Paz</p>
+                                    <ul class="text-justify">
+                                        <li>Desarrollo, implantación y mantenimiento de aplicaciones web.</li>
+                                        <li>Configuración y explotación de sistemas informáticos.</li>
+                                        <li>Aplicación de técnicas y procedimientos relacionados con la seguridad en sistemas.</li>
+                                        <li>Gestión de servidores de aplicaciones. Gestión de bases de datos.</li>
+                                        <li>Desarrollo de componentes multimedia para su integración en aplicaciones web.</li>
+                                        <li>Desarrollo e integración de componentes software en el entorno del servidor web.</li>
+                                        <li>Desarrollo de servicios para integrar sus funciones en otras aplicaciones web.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>Técnico en Sistemas Microinformáticos y Redes:</h5>
+                                    <p class="fw-lighter">sept 2020 - jun 2022, CPR Liceo La Paz</p>
+                                    <ul class="text-justify">
+                                        <li>Instalación y mantenimiento de servicios de redes, equipos y sistemas informáticos en entornos 
+                                            monousuario y multiusuario y servicios de Internet.</li>
+                                        <li>Elaboración de páginas web dinámicas, utilizando las herramientas más avanzadas en diseño 
+                                            Web.</li>
+                                        <li>Mantenimiento de servicios de internet: servidor web, correo, proxys …</li>
+                                        <li>Dar soporte al usuario resolviendo los problemas que se presentan en la explotación del 
+                                            servicio de red, del sistema informático y de las aplicaciones ofimáticas, siguiendo protocolos 
+                                            de actuación establecidos.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seguir con la sección Futura implementación -->
+                <div class="row mt-4 align-items-center">
+                    <p class="col-12 col-lg-6 text-justify">Este proyecto sienta las bases para un sitio web que pueda ampliarse en el 
+                        futuro con funcionalidades interactivas mediante JavaScript o integraciones backend (<span class="negrita">Spring 
+                        Rest</span>). El objetivo es crear una estructura clara y sólida que permita evolucionar el proyecto.</p>
+                    <div class="col-12 col-lg-6">
+                        <p class="text-decoration-underline text-center text-md-start">Funcionalidades que tendrá la aplicación web:</p>
+                        <ul class="text-justify">
+                            <li>Presentación de la asociación y de sus integrantes.</li>
+                            <li>Los usuarios podrán hacerse socios de la asociación pagando una cuota anual.</li>
+                            <li>Se podrán celebrar competiciones mensuales online exclusivas para socios.</li>
+                            <li>Cada participante tendrá su propio perfil con los tiempos que hizo en cada competición.</li>
+                            <li>Contará con un buscador de los perfiles de los participantes y de los resultados de cada competición.</li>
+                            <li>Tendrá una sección de los eventos organizados y un calendario de las próximas competiciones oficiales de la 
+                            WCA y otra sección de tutoriales de cubos (vídeos de YouTube o documentos pdf).</li>
+                            <li>Por último, tendrá un formulario para ponerse en contacto con la asociación.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-decoration-underline text-center">Tecnologías que utilizaré en la aplicación web:</p>
+                        <ul>
+                            <li>Frontend con React.</li>
+                            <li>Backend con Spring:
+                                <ul>
+                                    <li>Base de datos MySQL.</li>
+                                    <li>Spring Data JPA.</li>
+                                    <li>Spring REST.</li>
+                                    <li>Spring Security.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-decoration-underline">Dependencias que utilizaré:</p>
+                        <!-- Tabla dependencias estilizada -->
+                        <table class="table table-striped table-bordered text-center table-hover w-75">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th scope="col">Dependencia</th>
+                                    <th scope="col">Versión recomendada</th>
+                                    <th scope="col">Frontend / Backend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Java JDK</td>
+                                    <td>18.0.2.1+1-1</td>
+                                    <td>Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>MySQL</td>
+                                    <td>8.0.27 (Wampp)</td>
+                                    <td>Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>phpMyAdmin</td>
+                                    <td>5.1.1 (Wampp)</td>
+                                    <td>Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Wampp Server (Windows)</td>
+                                    <td>3.2.6</td>
+                                    <td>Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Maven</td>
+                                    <td>(gestionada por el editor)</td>
+                                    <td>Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Editor de código</td>
+                                    <td>Visual Studio Code</td>
+                                    <td>TODOS</td>
+                                </tr>
+                                <tr>
+                                    <td>NodeJS</td>
+                                    <td>v20.12.0</td>
+                                    <td>Frontend</td>
+                                </tr>
+                                <tr>
+                                    <td>Bootstrap</td>
+                                    <td>5.3.3</td>
+                                    <td>Frontend</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="text-center">Estad atentos a las redes sociales de la AGS (Asociación Gallega de Speedcubing). Allí se publicará 
+                cuando estará disponible la aplicación web.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid p-0">
+        <hr class="lineaAzul m-0">
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0 justify-content-md-start 
+                align-items-md-end">
+                        <p class="mb-3">
+                            <a href="https://github.com/anaia26" target="_blank" class="me-3">
+                                <i class="bi bi-github text-primary fa-2x"></i>
+                            </a> 
+                            <a href="https://www.linkedin.com/in/ana-iglesias-arias-5815b02b3/" target="_blank" class="me-3">
+                                <i class="bi bi-linkedin text-primary fa-2x"></i>
+                            </a> 
+                            <a href="https://www.figma.com/files/team/1423967724030985938/user/1296013656409856550?fuid=1296013656409856550" 
+                            target="_blank" class="gap-3">
+                                <i class="fab fa-figma text-primary fa-2x"></i>
+                            </a>
+                        </p>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-end align-items-end">
+                    <p class="mt-3 mb-1 text-center mx-auto">Aquí puedes encontrar más información sobre la asociación</p>
+                    <p class="mx-auto">
+                        <a href="https://www.instagram.com/agspeedcubing/" target="_blank">
+                            <i class="bi bi-instagram text-primary fa-2x"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
