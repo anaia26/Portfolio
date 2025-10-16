@@ -11,6 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Ana Iglesias Arias - Portfolio</title>
+    
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+    // Inicializar EmailJS al cargar la página
+    document.addEventListener("DOMContentLoaded", function() {
+      emailjs.init("fxALQmWWb4UxO21ZS");
+    });
+
+    // Función para enviar el formulario
+    function enviarFormulario(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_frze0za', 'template_n2akyy5', event.target)
+        .then(() => {
+            alert('✅ Mensaje enviado correctamente');
+            event.target.reset();
+        })
+        .catch((error) => {
+            console.error('❌ Error al enviar el mensaje:', error);
+            alert('Hubo un problema al enviar el mensaje. Intenta de nuevo.');
+        });
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -42,10 +67,6 @@
                             <a class="navbar-brand mb-3" href="index.html#seccionContacto">Contacto</a>
                         </li>
                     </ul>
-                    <a href="../documentacion/curriculumVitaeAIA.pdf" class="btn btn-primary rounded-4 nav-item mt-3 mt-md-0" 
-                    target="_blank" download="curriculumVitaeAIA.pdf">
-                        <i class="bi bi-download"></i> Download CV
-                    </a>
                 </div>
             </div>
         </nav>
@@ -164,6 +185,32 @@
                 <div class="card mb-3 py-3 tamanhoCardExperiencias">
                     <div class="row gap-0 card-body">
                         <div class="col-12 col-lg-3 align-self-center">
+                            <p class="fs-1 text-center"><a href="https://auren.com/es/" class="enlaceAzul tituloCardExperiencia" 
+                            target="_blank">Auren</a></p>
+                            <p class="fs-6 text-center">Consultoría tecnológica</p>
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center">
+                            <h5 class="card-title text-center text-decoration-underline">Técnico Superior en Desarrollo de Aplicaciones Web</h5>
+                            <ul class="card-text list-unstyled">
+                                <li>Utilizando Qlik Sense y Qlik View:
+                                    <ul>
+                                        <li>Extracción y transformación de datos (ETL)</li>
+                                        <li>Diseño y desarrollo de dashboards interactivos.</li>
+                                        <li>Optimización y validación de modelos de datos.</li>
+                                        <li>Análisis y presentación de resultados.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-3">
+                            <p class="text-center">abr 01 - jun 10, 2025</p>
+                            <p class="text-center">Prácticas Ciclo Superior Desarrollo de Aplicaciones Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 py-3 tamanhoCardExperiencias">
+                    <div class="row gap-0 card-body">
+                        <div class="col-12 col-lg-3 align-self-center">
                             <p class="fs-5 text-center"><a href="https://www.worldcubeassociation.org/competitions/SpanishChampionship2024" 
                                 class="enlaceAzul tituloCardExperiencia" target="_blank">Spanish Championship 2024</a></p>
                             <p class="fs-6 text-center">Organizado por: <a href="https://speedcubingspain.org/" class="enlaceAzul" 
@@ -222,7 +269,7 @@
                 id="imagenAnaContacto">
             </div>
             <!-- Formulario -->
-            <form class="w-50 col-12 col-lg-8 me-5" action="mailto:anaiglesiasarias@gmail.com" method="post" enctype="text/plain">
+            <form class="w-50 col-12 col-lg-8 me-5 bg-white p-4 rounded shadow" onsubmit="enviarFormulario(event)">
 
                 <div class="mb-3">
                     <label for="inputNombre" class="form-label">Nombre:</label>
