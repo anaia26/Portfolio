@@ -258,43 +258,43 @@
         <!-- Sección de Contacto -->
         <section class="container-fluid p-3" id="seccionContacto">
             <h2 class="display-4 text-center text-primary">Contacta conmigo</h2>
-            <div class="row justify-content-center align-items-center gap-5 ps-5">
-            <div class="col-12 col-lg-4 me-5">
-                <h3 class="display-5 text-primary text-center text-md-center text-lg-start">Contacto</h3>
-                <p class="text-center text-md-center text-lg-start mx-2">Escríbeme a <a href="mailto:anaiglesiasarias@gmail.com" 
-                class="enlaceAzul">anaiglesiasarias@gmail.com</a> o encuéntrame en 
-                    <a href="https://www.linkedin.com/in/ana-iglesias-arias-5815b02b3/" class="enlaceAzul" target="_blank">LinkedIn</a>. 
-                    ¡Estoy lista para colaborar contigo!</p>
-                <img src="../img/imagenAnaSinFondo.png" alt="Avatar de Ana" class="rounded-5 col-12 col-lg-6 mx-auto d-block" 
-                id="imagenAnaContacto">
+            <div class="container">
+                <div class="row justify-content-center align-items-center gap-4">
+                    <!-- Sección de la imagen y texto -->
+                    <div class="col-12 col-lg-4 text-center text-lg-start">
+                        <h3 class="display-5 text-primary">Contacto</h3>
+                        <p>
+                            Escríbeme a <a href="mailto:anaiglesiasarias@gmail.com" class="enlaceAzul">anaiglesiasarias@gmail.com</a>
+                            o encuéntrame en 
+                            <a href="https://www.linkedin.com/in/ana-iglesias-arias-5815b02b3/" class="enlaceAzul" target="_blank">LinkedIn</a>.
+                            ¡Estoy lista para colaborar contigo!
+                        </p>
+                        <img src="../img/imagenAnaSinFondo.png" alt="Avatar de Ana" 
+                        class="rounded-5 col-6 col-lg-12 mx-auto d-block" id="imagenAnaContacto">
+                    </div>
+                    <!-- Formulario -->
+                    <div class="col-12 col-lg-6">
+                        <form class="bg-white p-4 rounded shadow" onsubmit="enviarFormulario(event)">
+                            <div class="mb-3">
+                                <label for="inputNombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control fondoInputFormulario customPlaceholder" id="inputNombre" name="nombre" placeholder="Escribe tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Correo electrónico:</label>
+                                <input type="email" class="form-control fondoInputFormulario customPlaceholder" id="inputEmail" name="email" placeholder="nombre@xxx.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputMensaje" class="form-label">Mensaje:</label>
+                                <textarea class="form-control fondoInputFormulario customPlaceholder" id="inputMensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+                            </div>
+                            <div class="text-center text-md-center text-lg-start mt-4 mb-3">
+                                <input type="submit" class="btn fondoBotonEnviar me-md-5 anchoBotonesFormulario" value="Enviar">
+                                <input type="reset" class="btn fondoBotonBorrarDatos anchoBotonesFormulario mt-3 mt-md-0" value="Borrar datos">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <!-- Formulario -->
-            <form class="w-50 col-12 col-lg-8 me-5 bg-white p-4 rounded shadow" onsubmit="enviarFormulario(event)">
-
-                <div class="mb-3">
-                    <label for="inputNombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control fondoInputFormulario customPlaceholder" id="inputNombre" name="nombre" 
-                    placeholder="Escribe tu nombre" required>
-                </div>
-        
-                <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Correo electrónico:</label>
-                    <input type="email" class="form-control fondoInputFormulario customPlaceholder" id="inputEmail" name="email" 
-                    placeholder="Escribe tu correo: nombre@xxx.com" required>
-                </div>
-        
-                <div class="mb-3">
-                    <label for="inputTextarea" class="form-label">Mensaje:</label>
-                    <textarea class="form-control no-resize fondoInputFormulario customPlaceholder" id="inputTextarea" name="mensaje" 
-                    rows="2" placeholder="Escribe tu mensaje" required></textarea>
-                </div>
-        
-                <div class="text-center text-md-center text-lg-start mt-4 mb-3">
-                    <input type="submit" class="btn fondoBotonEnviar me-md-5 anchoBotonesFormulario" value="Enviar">
-                    <input type="reset" class="btn fondoBotonBorrarDatos anchoBotonesFormulario mt-3 mt-md-0" value="Borrar datos">
-                </div>
-            </form>
-        </div>
         </section>
     </main>
     <!-- Footer -->
