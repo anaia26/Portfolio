@@ -292,3 +292,12 @@ controles del carrusel en el centro.*/
     border: 0.0625rem solid #ffffff;/*1px*/
 }
 
+/* Estilos personalizados para los títulos de SweetAlert2 */
+.swal2-title {
+    color: #007BFF !important;
+    text-shadow: none !important;              
+}
+
+.swal2-html-container {
+    color: #555 !important; 
+}

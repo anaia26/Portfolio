@@ -15,26 +15,42 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
     // Inicializar EmailJS al cargar la página
-    document.addEventListener("DOMContentLoaded", function() {
-      emailjs.init("fxALQmWWb4UxO21ZS");
-    });
+        document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init("fxALQmWWb4UxO21ZS");
+        });
 
     // Función para enviar el formulario
-    function enviarFormulario(event) {
-        event.preventDefault();
+        function enviarFormulario(event) {
+            event.preventDefault();
 
-        emailjs.sendForm('service_frze0za', 'template_n2akyy5', event.target)
-        .then(() => {
-            alert('✅ Mensaje enviado correctamente');
-            event.target.reset();
-        })
-        .catch((error) => {
-            console.error('❌ Error al enviar el mensaje:', error);
-            alert('Hubo un problema al enviar el mensaje. Intenta de nuevo.');
-        });
-    }
+            emailjs.sendForm('service_frze0za', 'template_n2akyy5', event.target)
+            .then(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Mensaje enviado correctamente!',
+                    text: 'Gracias por contactarme, te responderé pronto.',
+                    showConfirmButton: false,
+                    timer: 5000,
+                    timerProgressBar: true
+                });
+                event.target.reset();
+            })
+            .catch((error) => {
+                console.error('❌ Error al enviar el mensaje:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: '<span style="color: #dc3545;">Error al enviar</span>',
+                    text: 'Hubo un problema al enviar el mensaje. Inténtalo de nuevo más tarde.',
+                    confirmButtonColor: '#dc3545',
+                    confirmButtonText: 'Cerrar'
+                });
+            });
+        }
     </script>
 </head>
 <body>
